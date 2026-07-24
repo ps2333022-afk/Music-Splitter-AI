@@ -34,3 +34,7 @@ build/
 Music-Splitter-Backup/
 Music-Splitter-Backup/
 .DS_Store
+
+seprated/
+uploads/
+*.wav
