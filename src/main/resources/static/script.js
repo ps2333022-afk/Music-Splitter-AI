@@ -49,61 +49,58 @@ splitBtn.addEventListener("click", async function () {
         const result = await response.json();
 
 
-        if(result.success){
+        if (result.success) {
 
             status.innerHTML =
-            "✅ " + result.message;
+                "✅ " + result.message;
 
 
             progressBar.style.width = "100%";
-
-
-            const song = result.songName;
 
 
             status.innerHTML += `
 
             <br><br>
 
-            <a href="http://localhost:8080/api/download/${song}/vocals">
+            <a href="http://localhost:8080/api/download/vocals">
             🎤 Download Vocals
             </a>
 
-            <br>
+            <br><br>
 
-            <a href="http://localhost:8080/api/download/${song}/drums">
+            <a href="http://localhost:8080/api/download/drums">
             🥁 Download Drums
             </a>
 
-            <br>
+            <br><br>
 
-            <a href="http://localhost:8080/api/download/${song}/bass">
+            <a href="http://localhost:8080/api/download/bass">
             🎸 Download Bass
             </a>
 
-            <br>
+            <br><br>
 
-            <a href="http://localhost:8080/api/download/${song}/other">
+            <a href="http://localhost:8080/api/download/other">
             🎵 Download Other
             </a>
 
             `;
 
 
-        }else{
+        } else {
 
             status.innerHTML =
-            "❌ " + result.message;
+                "❌ " + result.message;
 
         }
 
 
-    } catch(error){
+    } catch (error) {
 
         console.log(error);
 
         status.innerHTML =
-        "Upload failed ❌";
+            "Upload failed ❌";
 
     }
 

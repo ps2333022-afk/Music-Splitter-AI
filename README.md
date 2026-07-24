@@ -1,96 +1,72 @@
 # 🎵 Music Splitter AI
 
-An AI-powered music separation application that splits a song into separate audio tracks like vocals, drums, bass, and other instruments.
-
-This project uses *Demucs AI model* for audio source separation with a *Spring Boot backend* and a web-based frontend.
-
----
+An AI-powered music source separation application that separates a song into individual tracks like Vocals, Drums, Bass and Other instruments using Demucs AI.
 
 ## 🚀 Features
 
-•⁠  ⁠🎧 Upload audio files
-•⁠  ⁠🤖 AI-based music separation
-•⁠  ⁠🎤 Extract Vocals
-•⁠  ⁠🥁 Extract Drums
-•⁠  ⁠🎸 Extract Bass
-•⁠  ⁠🎹 Extract Other Instruments
+•⁠  ⁠🎤 Vocal separation
+•⁠  ⁠🥁 Drum separation
+•⁠  ⁠🎸 Bass separation
+•⁠  ⁠🎵 Other instrument separation
+•⁠  ⁠📂 Audio upload support
 •⁠  ⁠⬇️ Download separated tracks
-
----
+•⁠  ⁠⚡ AI-based audio processing
 
 ## 🛠️ Technologies Used
-
-### Backend
-•⁠  ⁠Java
-•⁠  ⁠Spring Boot
-•⁠  ⁠Maven
-
-### AI / Audio Processing
-•⁠  ⁠Python
-•⁠  ⁠Demucs
-•⁠  ⁠PyTorch
-•⁠  ⁠Torchaudio
 
 ### Frontend
 •⁠  ⁠HTML
 •⁠  ⁠CSS
 •⁠  ⁠JavaScript
 
----
+### Backend
+•⁠  ⁠Java
+•⁠  ⁠Spring Boot
 
-## 📂 Project Structure
+### AI Model
+•⁠  ⁠Python
+•⁠  ⁠Demucs
+•⁠  ⁠PyTorch
+
+## 📁 Project Structure
 Music-Splitter
+│
+├── frontend
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+│
+├── backend
+│   ├── Spring Boot
+│   └── Demucs Service
+│
+└── separated
+└── Generated audio tracks
+## ⚙️ How to Run
 
-├── src/main/java
-│   └── com.music.music_splitter
-│       ├── controller
-│       ├── service
-│       └── model
+### 1. Install Demucs
 
-├── src/main/resources
-│   └── static
-│       ├── index.html
-│       ├── script.js
-│       └── style.css
-└── pom.xml
----
-
-## ⚙️ How To Run
-
-### 1. Install Python Dependencies
-
+```bash
 pip install demucs
-### 2. Run Spring Boot Application
 
-### 3. Open Browser
-http://localhost:8080/
+2.⁠ ⁠Start Spring Boot Backend
+./mvnw spring-boot:run
 
----
+3.⁠ ⁠Open Application
 
-## 🎶 Output
+Open the frontend in browser and upload an audio file.
 
-The application separates audio into:
+📸 Screenshots
 
-•⁠  ⁠vocals.wav
-•⁠  ⁠drums.wav
-•⁠  ⁠bass.wav
-•⁠  ⁠other.wav
+(Add screenshots here)
 
-Users can download each track separately.
-
----
-
-## 🔮 Future Improvements
+🎯 Future Improvements
 
 •⁠  ⁠User authentication
-•⁠  ⁠Cloud storage support
-•⁠  ⁠Audio preview feature
-•⁠  ⁠Mobile application version
+•⁠  ⁠Cloud deployment
+•⁠  ⁠Faster processing
+•⁠  ⁠Multiple audio format support
 
----
+👨‍💻 Developer
 
-## 👨‍💻 Developer
-
-*Piyush Singh*
-
-BCA Project
+Piyush Singh
